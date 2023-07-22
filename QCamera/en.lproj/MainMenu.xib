@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19162" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="22113.3" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19162"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22113.3"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -74,12 +74,14 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Mirror Image" id="Xok-N7-YG0">
                                     <items>
-                                        <menuItem title="Mirror Horizontally" keyEquivalent="m" id="78">
+                                        <menuItem title="Mirror Horizontally" keyEquivalent="" id="78">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="mirrorHorizontally:" target="494" id="U1E-Z0-0IF"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Mirror Vertically" keyEquivalent="M" id="658" userLabel="Mirror Image Vertically">
+                                        <menuItem title="Mirror Vertically" keyEquivalent="" id="658" userLabel="Mirror Image Vertically">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="mirrorVertically:" target="494" id="rj1-a8-kfG"/>
                                             </connections>
@@ -91,12 +93,14 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Rotate Image" id="u5u-xX-dxx">
                                     <items>
-                                        <menuItem title="Rotate Left" keyEquivalent="l" id="W0l-0M-Fz8">
+                                        <menuItem title="Rotate Left" keyEquivalent="" id="W0l-0M-Fz8">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="rotateLeft:" target="494" id="1Xt-5a-Nal"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Rotate Right" keyEquivalent="r" id="Cow-qK-cCO">
+                                        <menuItem title="Rotate Right" keyEquivalent="" id="Cow-qK-cCO">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="rotateRight:" target="494" id="8Ic-vE-geE"/>
                                             </connections>
@@ -110,17 +114,19 @@
                                 </connections>
                             </menuItem>
                             <menuItem title="Borderless Mode" keyEquivalent="b" id="651">
+                                <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="borderless:" target="494" id="XSj-SB-hEo"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="Fix Aspect Ratio" keyEquivalent="a" id="eHX-9R-cym">
+                                <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="toggleFixAspectRatio:" target="-1" id="5T3-Dw-OxE"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="Enter Full Screen" keyEquivalent="f" id="9v9-Bd-YIE">
-                                <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
+                                <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="enterFullScreen:" target="494" id="SVF-ca-TFE"/>
                                 </connections>
@@ -351,7 +357,8 @@
                                     <action selector="performMiniaturize:" target="-1" id="37"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Zoom" id="239">
+                            <menuItem title="Zoom" keyEquivalent="m" id="239">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
                                 <connections>
                                     <action selector="performZoom:" target="-1" id="240"/>
                                 </connections>
@@ -385,7 +392,7 @@
         <window title="Quick Camera" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="371">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <rect key="contentRect" x="335" y="390" width="509" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="875"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1055"/>
             <view key="contentView" wantsLayer="YES" id="372">
                 <rect key="frame" x="0.0" y="0.0" width="509" height="360"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
