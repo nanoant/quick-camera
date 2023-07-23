@@ -1,5 +1,18 @@
 # Quick Camera
 
+<img src="Icons/QuickCamera.iconset/icon_256x256.png" alt="Icon" style="zoom:50%;" />
+
+## Note on Fork
+
+This fork is intended to modify/augment original Simon’s code to provide minimal latency on both video and audio when streaming capture devices:
+
+1. Uses `AVSampleBufferDisplayLayer` and `AVAudioEngine` to display video and play audio with minimal latency.
+2. Removes (temporarily?) ability to select devices.
+3. Replaces original icon with more modern one.
+4. Targets macOS 10.15 or higher.
+
+## Original Description
+
 Quick Camera is a MacOS utility that displays the output from any of your web cameras on your desktop. Quick Camera can be used for video conferences and presentations where you need to show an external device to your audience via the USB camera. 
 
 Quick Camera supports mirroring (normal and reversed, both vertical and horizontal), can be rotated, resized to any size, and the window can be placed in the foreground.
